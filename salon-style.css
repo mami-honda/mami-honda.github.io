@@ -1,0 +1,538 @@
+@charset "UTF-8";
+/*
+Theme Name: hair salon Welfare
+Author: mami.honda
+Description: hair salon Welfareサイト用テーマ
+Version: 1.0
+*/
+.some-section {
+  overflow: hidden;
+  *zoom: 1; }
+
+/* Base
+   ========================================================================== */
+.u-full-width {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box; }
+
+.u-max-full-width {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.center {
+  text-align: center; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Times New Roman", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "筑紫A丸ゴシック", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: .1em;
+  color: #020202;
+  background-color: #fff; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #020202; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/* Header
+   ========================================================================== */
+header {
+  background-color: #020202;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%; }
+  header .sp_menu {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #020202; }
+    header .sp_menu .header_in {
+      display: flex;
+      justify-content: space-between; }
+      header .sp_menu .header_in h1 {
+        width: 70px; }
+      header .sp_menu .header_in .btn-trigger {
+        position: relative;
+        width: 50px;
+        height: 44px;
+        cursor: pointer; }
+      header .sp_menu .header_in .btn-trigger span {
+        position: absolute;
+        left: 0;
+        width: 60%;
+        height: 2px;
+        background-color: #fff; }
+      header .sp_menu .header_in .btn-trigger, header .sp_menu .header_in .btn-trigger span {
+        display: inline-block;
+        transition: all .5s;
+        box-sizing: border-box; }
+      header .sp_menu .header_in .btn-trigger span:nth-of-type(1) {
+        top: 12px; }
+      header .sp_menu .header_in .btn-trigger span:nth-of-type(2) {
+        top: 22px; }
+      header .sp_menu .header_in .btn-trigger span:nth-of-type(3) {
+        top: 32px; }
+      header .sp_menu .header_in #btn09.active span:nth-of-type(1) {
+        -webkit-transform: translateY(10px) rotate(315deg);
+        transform: translateY(10px) rotate(315deg); }
+      header .sp_menu .header_in #btn09.active span:nth-of-type(2) {
+        opacity: 0; }
+      header .sp_menu .header_in #btn09.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-10px) rotate(-315deg);
+        transform: translateY(-10px) rotate(-315deg); }
+    header .sp_menu .sp_menu_li {
+      position: absolute;
+      right: 0%;
+      z-index: 10;
+      background-color: #020202;
+      display: none;
+      width: 100%; }
+      header .sp_menu .sp_menu_li a {
+        display: block;
+        padding: 2% 0;
+        border-top: solid 1px #282728;
+        color: #ffffff; }
+
+/* Article
+   ========================================================================== */
+article {
+  margin-top: 50px; }
+  article .animate__animated.animate__fadeIn {
+    animation-duration: 4s; }
+  article span:nth-of-type(2) {
+    animation-delay: 2s; }
+  article span:nth-of-type(3) {
+    animation-delay: 4s;
+    font-size: 24px;
+    font-size: 2.4rem; }
+  article h2 {
+    font-size: 20px;
+    font-size: 2rem; }
+
+#cover {
+  height: 240px;
+  background-image: url("salon-image.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  #cover .catchcopy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 60%;
+    width: 90%;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: "凸版文久明朝";
+    line-height: 34px;
+    font-weight: bold; }
+
+#concept {
+  padding: 8% 4%; }
+
+#news_area {
+  padding: 2% 4% 4% 4%;
+  background-color: #f6efe7; }
+  #news_area .news_title {
+    padding-top: 2%;
+    padding-bottom: 4%; }
+  #news_area .news_lists {
+    font-size: 14px;
+    font-size: 1.4rem; }
+    #news_area .news_lists li {
+      padding: 4% 0;
+      border-top: 1px solid #020202; }
+      #news_area .news_lists li span {
+        display: block; }
+    #news_area .news_lists li:last-child {
+      border-bottom: solid 1px #020202; }
+  #news_area .btn {
+    display: inline-block; }
+    #news_area .btn:hover {
+      background-color: #a2917e; }
+  #news_area .more {
+    display: block;
+    padding: 10px;
+    background-color: #b7aa9c;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 6%; }
+
+#reservation {
+  padding: 8% 4%; }
+  #reservation a {
+    display: inline-block;
+    padding: 1% 0; }
+    #reservation a:hover {
+      background-color: #a2917e; }
+  #reservation .btn {
+    padding: 10px;
+    background-color: #b7aa9c;
+    width: 200px;
+    margin: 6% auto;
+    margin-bottom: 0; }
+  #reservation .small {
+    font-size: 14px;
+    font-size: 1.4rem; }
+
+.under {
+  font-size: 14px;
+  font-size: 1.4rem; }
+  .under:hover {
+    text-decoration: underline; }
+
+/* plugin
+====================== */
+#booking-package_schedulePage .selectPanelError {
+  background-color: #eee !important; }
+
+.button-flat-primary {
+  background-color: #b7aa9c !important;
+  color: #020202 !important; }
+
+/* Footer
+   ========================================================================== */
+footer {
+  background-color: #020202; }
+  footer .logo {
+    width: 80px;
+    margin: 0 auto; }
+  footer p, footer a {
+    font-size: 10px;
+    font-size: 1rem;
+    color: #ffffff; }
+  footer .shop {
+    padding-bottom: 4%; }
+  footer .copy {
+    border-top: 1px solid  #282728; }
+
+/* Content
+   ========================================================================== */
+#sub_cover {
+  background-image: url("salon-subcover.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 120px;
+  position: relative; }
+
+#content {
+  padding: 2% 4% 4% 4%;
+  margin-top: 4%;
+  background-color: #f6efe7; }
+  #content .small {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: 2% 4%; }
+  #content table {
+    width: 100%; }
+  #content tr {
+    border-bottom: dotted 1px #b7aa9c;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 4%; }
+  #content tr:first-child {
+    padding-top: 24px; }
+  #content .td1 {
+    width: 60%; }
+  #content td.small2 {
+    font-size: 14px; }
+  #content td.text-right {
+    text-align: right; }
+  #content h3 {
+    font-size: 20px;
+    font-size: 2rem;
+    margin-bottom: 3%; }
+
+.profile_box {
+  margin: 2% 4%; }
+  .profile_box .profile-icon {
+    margin: 0 auto; }
+    .profile_box .profile-icon img {
+      border-radius: 50%;
+      margin: 20px 0; }
+  .profile_box .profile {
+    text-align: left;
+    font-size: 16px;
+    font-size: 1.6rem; }
+
+.blog_contents {
+  margin: 2% 4%; }
+
+.blog_box {
+  padding: 20px 0; }
+  .blog_box .date, .blog_box .text {
+    border-bottom: dotted 1px #b7aa9c;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 10px 0; }
+  .blog_box .next {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    font-size: 1.4rem;
+    border-bottom: dotted 1px #b7aa9c; }
+    .blog_box .next:hover {
+      text-decoration: underline; }
+
+span.pages {
+  display: none; }
+
+.wp-pagenavi a, .wp-pagenavi span {
+  border: none !important; }
+  .wp-pagenavi a:hover, .wp-pagenavi span:hover {
+    text-decoration: none; }
+
+.page {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 0; }
+  .page:hover {
+    text-decoration: underline; }
+
+.page2 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 2% 4%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between; }
+  .page2:hover {
+    text-decoration: underline; }
+
+a.previouspostslink, a.nextpostslink {
+  display: none; }
+
+.form_box {
+  height: 240px;
+  border: solid #020202 1px;
+  width: 90%;
+  margin: 20px auto; }
+
+iframe {
+  height: 240px;
+  margin: 20px auto;
+  width: 100%; }
+
+.nav {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 0; }
+
+/* Media Queries for min-width: 560px　
+   ========================================================================== */
+@media (min-width: 560px) {
+  .sp_menu {
+    display: none !important; }
+
+  body {
+    font-size: 20px;
+    font-size: 2rem; }
+
+  /* Header
+      ================================= */
+  .pc_menu .header_in {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .pc_menu .header_in h1 {
+      width: 133px;
+      margin-left: 40px; }
+    .pc_menu .header_in .reservation {
+      border: 1px solid #fff;
+      margin: 10px 40px;
+      padding: 4px 40px; }
+      .pc_menu .header_in .reservation span {
+        color: #fff;
+        display: block;
+        font-size: 12px;
+        font-size: 1.2rem; }
+      .pc_menu .header_in .reservation span:nth-of-type(2) {
+        font-size: 16px;
+        font-size: 1.6rem; }
+
+  /* Article
+      ================================= */
+  .pc_menu_li {
+    font-size: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #020202;
+    margin: 0 auto;
+    margin-top: 87px; }
+    .pc_menu_li a {
+      display: block;
+      border-left: 1px solid #020202;
+      padding: 1.6% 5%; }
+      .pc_menu_li a:hover {
+        background-color: #b7aa9c; }
+    .pc_menu_li a:first-child {
+      border: none; }
+
+  #cover {
+    height: 400px; }
+    #cover .catchcopy {
+      line-height: 38px;
+      height: 40%;
+      width: 80%;
+      max-width: 1200px; }
+
+  #concept {
+    padding: 4%; }
+
+  #news_area {
+    padding-top: 1%;
+    padding-bottom: 3%; }
+    #news_area .news_title {
+      padding-bottom: 2%; }
+    #news_area .news_lists li {
+      padding: 1% 0; }
+      #news_area .news_lists li .pc_menu {
+        background-color: #b7aa9c; }
+      #news_area .news_lists li .btn {
+        display: inline-block;
+        padding: 4px 10px;
+        width: 100px; }
+        #news_area .news_lists li .btn:hover {
+          background-color: #a2917e; }
+      #news_area .news_lists li span {
+        display: inline-block;
+        padding: 4px 10px;
+        width: 100px; }
+    #news_area .more {
+      margin-top: 2%;
+      font-size: 18px;
+      font-size: 1.8rem; }
+
+  #reservation {
+    padding: 4%; }
+    #reservation p {
+      padding: 0; }
+    #reservation .btnbox {
+      display: flex;
+      justify-content: space-evenly; }
+    #reservation .btn {
+      font-size: 18px;
+      font-size: 1.8rem; }
+    #reservation .small {
+      font-size: 16px;
+      font-size: 1.6rem; }
+
+  .footmenu_li {
+    font-size: 18px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; }
+    .footmenu_li a {
+      display: block;
+      padding: 0 3%;
+      border-left: solid 1px #020202; }
+      .footmenu_li a:hover {
+        background-color: #b7aa9c; }
+    .footmenu_li a:first-child {
+      border-left: none; }
+
+  .sln-service, #sln-salon .sln-service {
+    padding-top: 4% !important; }
+
+  .supplement {
+    font-size: 16px;
+    font-size: 1.6rem; }
+
+  /* Footer
+      ================================= */
+  footer .logo {
+    width: 133px; }
+  footer p, footer a {
+    font-size: 12px;
+    font-size: 1.2rem; }
+
+  /* Content
+     ================================= */
+  #content {
+    padding-top: 1%;
+    padding-bottom: 3%; }
+    #content .small {
+      font-size: 16px;
+      font-size: 1.6rem;
+      margin: 0 8%; }
+    #content tr {
+      margin: 2% 8%; }
+    #content td.small2 {
+      font-size: 18px; }
+
+  #sub_cover {
+    height: 200px; }
+
+  .profile_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2% 8%;
+    margin-top: 4%; }
+    .profile_box .profile-icon {
+      margin: 0;
+      width: 30%; }
+    .profile_box .profile {
+      width: 64%; }
+
+  .form_box, iframe {
+    height: 400px; }
+
+  .nav {
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 20px; } }
+/* Media Queries for min-width: 960px
+   ========================================================================== */
+@media (min-width: 960px) {
+  #cover {
+    height: 500px; }
+    #cover .catchcopy {
+      padding: 1%; }
+
+  .pc_menu_li {
+    font-size: 20px;
+    font-size: 2rem; }
+
+  #sub_cover {
+    height: 250px; }
+
+  .form_box, iframe {
+    height: 500px; }
+
+  #content .td1 {
+    width: 82%; }
+
+  .profile_box .profile-icon img {
+    margin: 0; }
+
+  .profile_box .profile {
+    width: 70%; } }
+/* Media Queries for max-width: 559px
+   ========================================================================== */
+@media (max-width: 559px) {
+  .pc_menu {
+    display: none !important; } }
+
+/*# sourceMappingURL=style.css.map */
