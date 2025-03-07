@@ -479,7 +479,7 @@ a.btn_22:hover{
   width: 100%;
   font-weight: bold;
   position: relative;
-  background-image: url(img/fv-datumou.png);
+  background-image: url(fv-datumou.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1585,7 +1585,7 @@ svg {
 #facial
 ============================*/
 #facial .fv{
-  background-image: url(img/fv-facial.png);
+  background-image: url(fv-facial.png);
 }
 
 #facial .header__nav{
@@ -2504,7 +2504,7 @@ svg {
     }
 
     #lp .fv{
-      background-image: url(img/vio-fv-sp.png);
+      background-image: url(vio-fv-sp.png);
     }
 
     #lp #vio h1 {
@@ -2528,15 +2528,15 @@ svg {
   }
 
   #lp #face .fv{
-    background-image: url(img/face-fv-sp.png);
+    background-image: url(face-fv-sp.png);
   }
 
   #lp #beard .fv{
-    background-image: url(img/beard-fv-sp.png);
+    background-image: url(beard-fv-sp.png);
   }
 
   #lp #back .fv{
-    background-image: url(img/back-fv-sp.png);
+    background-image: url(back-fv-sp.png);
   }
 
 }
